@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">FinalProject</string>
+    <string name="title">Random Restaurant Generator</string>
+    <string name="min_rating">Minimum rating (0-5)</string>
+    <string name="restaurant_type">Type of restaurant</string>
+    <string name="max_distance">Maximum distance (miles)</string>
+    <string name="find_restaurant">Find Random Restaurant</string>
+    <string name="more_details">More Details</string>
+    <string name="saved_places">Saved Restaurants</string>
+
+
+</resources>

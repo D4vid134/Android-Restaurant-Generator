@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/title_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:text="@string/title"
+        android:textSize="34sp"
+        android:textStyle="bold"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.494"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/min_rating_input"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="@string/min_rating"
+        android:inputType="numberDecimal"
+        android:background="@android:drawable/editbox_background_normal"
+        android:padding="8dp"
+        android:textSize="16sp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/title_text" />
+
+    <EditText
+        android:id="@+id/restaurant_type_input"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="@string/restaurant_type"
+        android:inputType="text"
+        android:background="@android:drawable/editbox_background_normal"
+        android:padding="8dp"
+        android:textSize="16sp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/min_rating_input" />
+
+    <EditText
+        android:id="@+id/max_distance_input"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="@string/max_distance"
+        android:inputType="numberDecimal"
+        android:background="@android:drawable/editbox_background_normal"
+        android:padding="8dp"
+        android:textSize="16sp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/restaurant_type_input" />
+
+    <Button
+        android:id="@+id/find_restaurant_button"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:text="@string/find_restaurant"
+        android:padding="12dp"
+        android:layout_marginTop="24dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/max_distance_input" />
+
+    <Button
+        android:id="@+id/saved_restaurants"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:text="@string/saved_places"
+        android:padding="12dp"
+        android:layout_marginTop="12dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/find_restaurant_button" />
+
+    <TextView
+        android:id="@+id/restaurant_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/black"
+        android:textSize="18sp"
+        android:visibility="gone"
+        android:layout_marginTop="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/saved_restaurants" />
+
+    <TextView
+        android:id="@+id/restaurant_rating"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/darker_gray"
+        android:textSize="16sp"
+        android:visibility="gone"
+        android:layout_marginTop="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/restaurant_name" />
+
+    <TextView
+        android:id="@+id/restaurant_distance"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/darker_gray"
+        android:textSize="16sp"
+        android:visibility="gone"
+        android:layout_marginTop="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/restaurant_rating" />
+
+    <TextView
+        android:id="@+id/restaurant_open_status"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/darker_gray"
+        android:textSize="16sp"
+        android:visibility="gone"
+        android:layout_marginTop="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/restaurant_distance" />
+
+    <Button
+        android:id="@+id/more_details_button"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:text="@string/more_details"
+        android:padding="12dp"
+        android:visibility="gone"
+        android:layout_marginTop="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/restaurant_open_status" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
